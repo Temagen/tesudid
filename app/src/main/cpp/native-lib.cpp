@@ -29,13 +29,6 @@ void *thread_main(void *)
     } while (!isLibraryLoaded(LibraryToLoad));
 
     LOGDEBUG("INITIALIZED!");
-
-    offsets = new Offsets();
-
-    Functions();
-    Hooks();
-    Patches();
-
     isChams();
 
     return nullptr;
